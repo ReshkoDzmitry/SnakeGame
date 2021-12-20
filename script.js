@@ -5,7 +5,7 @@ const ground = new Image();
 ground.src = 'img/backGround.png';
 
 const foodImg = new Image();
-foodImg.src = 'img/carrot.png';
+foodImg.src = 'img/apple.png';
 
 let box = 32;
 
@@ -41,7 +41,7 @@ let drawGame = () => {
     ctx.drawImage(foodImg, food.x, food.y)
 
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillStyle = i === 0 ? 'green' : 'aqua';
+        ctx.fillStyle = i === 0 ? 'darkgreen' : 'green';
         ctx.fillRect(snake[i].x, snake[i].y, box, box)
     }
 
